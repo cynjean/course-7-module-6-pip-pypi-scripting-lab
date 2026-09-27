@@ -146,3 +146,19 @@ After completing this lab, you will:
 ✅ Structure projects for portability and collaboration
 
 These scripting and packaging skills are essential for building automation tools and working in modern Python development workflows.
+
+## Generate a log
+
+Install the pinned runtime dependency with `python -m pip install -r requirements.txt`,
+then run the script from the repository root:
+
+```bash
+python lib/generate_log.py
+```
+
+This creates `log_YYYYMMDD.txt` in the current directory. To fetch a sample post
+from JSONPlaceholder and record its title instead, run:
+
+```bash
+python lib/generate_log.py --fetch-post
+```
